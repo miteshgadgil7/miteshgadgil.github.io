@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>Sharad Shriram - Project_name</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--Make the Navbar disappear upon click-->
+    <script type="text/javascript">
+    	 $(".a").click(function () {
+            if ($("#btnCollapse").css('display')!='none')
+            $("#btnCollapse").click();
+        });
+    </script>
+
+    	<!--Select the active li element-->
+    <script type="text/javascript">
+	   $(document).on('click', '.nav-list li', function() {
+	       $(".nav-list li").removeClass("active");
+	       $(this).addClass("active");
+	   });
+	</script>
+  </head>
+
+  <body>
+
+  <body>
+    <!-- Static navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+			<button id="btnCollapse" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Sharad Shriram</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="index.html#publications">Publications</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+	<div id="workwrap">
+	    <div class="container">
+			<div class="row">
+				<!--<div class="col-lg-6 col-lg-offset-3">-->
+					<h1>Super Mario -Revived for the modern browser</h1>
+					<h4>ROLE: DEVELOPER</h4>
+				<!--</div>-->
+			</div><!--/row -->
+	    </div> <!-- /container -->
+	</div><!--/workwrap -->
+	
+	<section id="works"></section>
+	<div class="container">
+		<div class="row  mt mb">
+			<div class="col-lg-10 col-lg-offset-1">
+				<h4>ABOUT THE PROJECT</h4>
+				<p>  A free HTML5 remake of Nintendo's original Super Mario Bros, expanded for the modern web. It includes the original 32 levels, a random map generator, a level editor, and over a dozen custom mods. Implemented with HTML,JS (and related libraries) and CSS.</p>
+				<br>
+				<br>
+				<h4>IMPLEMENTATION</h4>
+				<p>
+				FullScreenMario uses <a href="" target="_blank">Grunt</a> to automate building, which requires Node.js.<br>
+				FullScreenMario is built on a modular framework called <a href="https://github.com/FullScreenShenanigans/GameStartr" target="_blank">GameStartr</a>. The <a href="https://github.com/FullScreenShenanigans/" target="_blank">FullScreenShenanigans</a> organization contains GameStartr, its parent class EightBittr, and the modules used by the GameStartr framework. These all (theoretically) have their own README files, which you should skim before developing for FullScreenMario itself.<br>
+				All source code is in the <a href="https://github.com/ssharad/project-implementation/blob/master/Source">Source</a> directory. See <a href="https://github.com/ssharad/project-implementation/blob/master/Getting%20Started.md">Getting Started.md</a> for an in-depth guide on getting started programming with FullScreenMario.<br>
+				The FullScreenMario.ts class declaration contains class functions and some constants, while static settings to be added to the FullScreenMario prototype, such as map layouts and object attributes, are stored in files under <a href="https://github.com/ssharad/project-implementation/blob/master/Source/settings">Source/settings</a>, such as audio.js and collisions.js.<br><br>
+				<center>
+				<a class="btn btn-info" role="button" href="https://foss2016.github.io/game.html">Click - to play</a>
+				<a class="btn btn-default" role="button" href="https://github.com/ssharad/project-implementation">Source Code</a></center></p>
+			</div>
+			<div class="col-lg-10 col-lg-offset-1 centered mt">
+				<center>
+				<img class="img-responsive" src="assets/img/portfolio/mario.png">
+				</center>
+				<caption>Screenshot of Super Mario game play</caption>
+			</div>	
+		</div><!--/row -->
+	</div><!--/container -->
+	
+	<!--Social Media-->	
+	<section id="contact"></section>
+	<div id="social">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-4">
+					<a href="skype:sharad.sriram?userinfo"><i class="fa fa-skype"></i></a>
+				</div>
+				<div class="col-lg-2">
+					<a href="mailto:sharad.sriram@gmail.com"><i class="fa fa-envelope-o"></i></a>
+				</div>
+				<div class="col-lg-2">
+					<a href="https://twitter.com/sharad_sriram"><i class="fa fa-twitter"></i></a>
+				</div>
+				<div class="col-lg-2">
+					<a href="https://linkedin.com/in/sharad10694"><i class="fa fa-linkedin"></i></a>
+				</div>
+				<div class="col-lg-2">
+					<a href="https://github.com/ssharad"><i class="fa fa-github"></i></a>
+				</div>
+			</div><!--/row -->
+		</div><!--/container -->
+	</div><!--/social -->
+
+	<div id="footerwrap">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-4">
+					<p><b>DEVELOPER, RESEARCHER & FREELANCER</b></p>
+				</div>
+			
+				<div class="col-lg-4">
+					<p>Living in Coimbatore, India.</p>
+				</div>
+				<div class="col-lg-4">
+					<p>sharad.sriram@gmail.com</p>
+				</div>
+			</div>
+		</div>
+	</div><!--/footerwrap -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

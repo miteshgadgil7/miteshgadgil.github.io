@@ -1,14 +1,263 @@
-<html>
-<head>
-<title> Sharad Shriram</title> 
-</head>
-<body>
-Sorry, I'm redesigning my website!
-You can check out my <a href="github.com/ssharad">Github</a> profile for my portfolios.
-Also, my LinkedIn profile which is up-to-date, is <a href="linkedin.com/in/sharad10694">click here!</a>.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
 
-Thank you for visiting, I hope to see you soon once the website is done in a few weeks.
+    <title>Sharad Shriram - Home</title>
 
--Sharad
-</body>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--JQuery for both Bootstrap as well as to integrate feeds from my blog-->
+    <script data-require="jquery@*" data-semver="2.1.3" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+    <!--Make the Navbar disappear upon click-->
+    <script type="text/javascript">
+    	 $(".a").click(function () {
+            if ($("#btnCollapse").css('display')!='none')
+            $("#btnCollapse").click();
+        });
+    </script>
+
+    <!--Select the active li element-->
+    <script type="text/javascript">
+	   $(document).on('click', '.nav-list li', function() {
+	       $(".nav-list li").removeClass("active");
+	       $(this).addClass("active");
+	   });
+	</script>
+  </head>
+
+  <body>
+    <!-- Static navbar -->
+    <div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Sharad Shriram</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Projects</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+	<div id="headerwrap">
+	    <div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-3">
+					<h4>HELLO, MY NAME IS</h4>
+					<h1>SHARAD SHRIRAM</h1>
+					<h4>DEVELOPER, RESEARCHER & FREELANCER</h4>
+				</div>
+			</div><!--/row -->
+	    </div> <!-- /container -->
+	</div><!--/headerwrap -->
+
+	<!--About Me!-->
+	<section id="about"></section>
+	<div class="container">
+		<div class="row">
+			<h1>Bio</h1>
+			<div class="row">
+			        <div class="col-md-8">
+			            <p> I am a 22 year old CS fresher from Coimbatore, India.<br><br> I currently hold a BTech. in Computer Science and Engineering from <a href="https://www.amrita.edu" target="_blank">Amrita University</a>.<br><br> My preferred languages to develope range from Python, Java to HTML/CSS, JavaScript; check out my <a href="#portfolio">portfolio</a> to check out my featured projects. My current research are in the areas of Internet of Things, Machine Learning and Algorithms for Big Data problems. I am an <a href="http://www.dictionary.com/browse/autodidact">autodidact</a>, one who enjoys learning new skills and concepts on the fly while doing a project, this makes me very adaptable.<br><br>In my spare time, I enjoy listening to music (Instrumental, Indian Classical fusions, Cover songs) and meditate. I'm an occasional reader of the Monk who sold his Ferrari , Harry Potter series and tons of <a href="https://quora.com/Sharad-Shriram" target="_blank">Quora answers</a>.<br><br>You wish to hire me?<br><br>  <a class="btn btn-info" href="assets/docs/resume.pdf" role="button">Download my resume</a> (or) <a class="btn btn-primary" href="#contact" role="button">Get in touch</a>.</p>
+			        </div>
+			        <div class="col-md-4">
+			        	<br><br>
+			            <img src="assets/img/sharad.png"" class="img-responsive img-circle">
+			        </div>
+			</div>
+		</div><!--/row -->
+	</div><!--/container -->
+	<hr>
+
+	<!--projects-->
+	<section id="works"></section>
+	<div class="container">
+		<div class="row centered mt mb">
+			<h1>My Portfolio</h1>
+			
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+				<a href="acm-dc.html"><img src="assets/img/portfolio/acm.png" class="img-responsive"></a>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+				<a href="ti.html"><img src="assets/img/portfolio/ti.jpg" class="img-responsive"></a>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+				<a href="fp.html"><img src="assets/img/portfolio/fp.png" class="img-responsive"></a>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+				<a href="mario.html"><img src="assets/img/portfolio/mario.png" class="img-responsive"></a>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+				<a href="bandwidth.html"><img src="assets/img/portfolio/cat6.jpg" class="img-responsive"></a>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+				<br><br><br><br><br>
+				<a class="btn btn-default" href="projects.html" role="button">Click here for more</a>
+			</div>
+		</div><!--/row -->
+	</div><!--/container -->
+	<hr>
+
+	<!--Publication-->
+	<section id="publications"></section>
+	<div class="container">
+		<div class="row">
+			<center><h1>Selected Publications</h1></center>
+			<ol>
+			    <div class="col-lg-10">
+			    	<li>
+			    	<p>Sharad, S., P. Bagavathi Sivakumar, and V. Anantha Narayanan. “An Automated System to Mitigate Loss of Life at Unmanned Level Crossings.” Procedia Computer Science 92 (2016): 404-409.</p>
+			    	</li>
+			    </div>
+			    <div class="col-lg-2">
+			    	<a class="btn btn-info" role="button" href="http://www.sciencedirect.com/science/article/pii/S1877050916316532">PDF</a>
+			    </div>
+
+			    <div class="col-lg-10">
+			    	<li>
+			    	<p>Sharad, S., P. Bagavathi Sivakumar, and V. Anantha Narayanan. “A Novel IoT-Based Energy Management System for Large Scale Data Centers.” In Proceedings of the 2015 ACM Sixth International Conference on Future Energy Systems, pp. 313-318. ACM, 2015.</p>
+			    	</li>
+			    </div>
+			    <div class="col-lg-2">
+			    	<a class="btn btn-info" role="button" href="http://dl.acm.org/citation.cfm?id=2768520">PDF</a>
+			    </div>
+			  
+			    <div class="col-lg-10">
+			    <li>
+			    <p>Ananthanarayanan.V , Rajeswari.A , GouthamKashyap. P, Sharad S. “An Attack Perceptive Approach for Reliable and Secure Wireless Connectivity between Medical Devices in Public Environment.” International Journal of Applied Engineering Research 10, no. 3 (2015): 6581-6600.</p>
+			    </li>
+			    </div>
+			  
+				<div class="col-lg-10">
+			  	<li>
+			    <p>Sharad,  S. “Increasing internet speed and bandwidth by using laws of physics.” In  2014 International Conference on Intelligent Computing Applications, ICICA 2014, pp. 99-103.  Institute of Electrical and Electronics Engineers Inc., 2014.</p></li>
+			    </div>
+			    <div class="col-lg-2">
+			    <a class="btn btn-info" role="button" href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&amp;arnumber=6965020&amp;url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D6965020">PDF</a>
+			    </div>
+			  
+			</ol>
+		</div><!--/row -->
+	</div><!--/container -->
+	<hr>
+
+	<!--Blog Feed--><!--style the list better!-->
+	<section id="blog"></section>
+	<div class="container">
+		<div class="row centered mt mb">
+			<h1>Latest from my blog</h1>
+		</div><!--/row -->
+		<script type="text/javascript">
+				var feedURL = 'http://journalofthegeek.wordpress.com/feed', // Your feed URL
+				    outputEl = '#feed', // Output element
+				    countLimit = 3; // Amount of items to show
+
+				$.ajax({
+				    url: document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent(feedURL),
+				    dataType: 'json',
+				    success: function(data) {
+				      
+				      var $ul = $('<div class="row"/>').appendTo(outputEl),
+				          entries = data.responseData.feed.entries;
+				            
+				      for (var i = 0, length = countLimit; i < length; i++) {
+				        
+				        var title = entries[i].title,
+				            contentSnippet = entries[i].contentSnippet,
+				            link = entries[i].link,
+				            $li = $('<li />').appendTo($ul),
+				            
+				        $link = $('<a class="feed-title" target="_blank" href="' + link + '" title="' + title + '"></a>').appendTo($li);
+				        $link.append('<span>' + title + '</span>');
+				        $li.append('<div class="feed-content"><p>' + contentSnippet + '</p></div>');    
+				      }  
+				    } 
+				 });
+		</script>
+		<div class="container" id="feed"></div>
+	</div><!--/container -->
+
+	<!--Social Media-->	
+	<section id="contact"></section>
+	<div id="social">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-4">
+					<a href="skype:sharad.sriram?userinfo"><i class="fa fa-skype"></i></a>
+				</div>
+				<div class="col-lg-2">
+					<a href="mailto:sharad.sriram@gmail.com"><i class="fa fa-envelope-o"></i></a>
+				</div>
+				<div class="col-lg-2">
+					<a href="https://twitter.com/sharad_sriram"><i class="fa fa-twitter"></i></a>
+				</div>
+				<div class="col-lg-2">
+					<a href="https://linkedin.com/in/sharad10694"><i class="fa fa-linkedin"></i></a>
+				</div>
+				<div class="col-lg-2">
+					<a href="https://github.com/ssharad"><i class="fa fa-github"></i></a>
+				</div>
+			</div><!--/row -->
+		</div><!--/container -->
+	</div><!--/social -->
+
+	<div id="footerwrap">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-4">
+					<p><b>DEVELOPER, RESEARCHER & FREELANCER</b></p>
+				</div>
+			
+				<div class="col-lg-4">
+					<p>Living in Coimbatore, India.</p>
+				</div>
+				<div class="col-lg-4">
+					<p>sharad.sriram@gmail.com</p>
+				</div>
+			</div>
+		</div>
+	</div><!--/footerwrap -->
+	
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
 </html>

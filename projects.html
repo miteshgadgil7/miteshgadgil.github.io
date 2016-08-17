@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>Sharad Shriram - Projects</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--Make the Navbar disappear upon click-->
+    <script type="text/javascript">
+    	 $(".a").click(function () {
+            if ($("#btnCollapse").css('display')!='none')
+            $("#btnCollapse").click();
+        });
+    </script>
+
+    <!--Select the active li element-->
+    <script type="text/javascript">
+	   $(document).on('click', '.nav-list li', function() {
+	       $(".nav-list li").removeClass("active");
+	       $(this).addClass("active");
+	   });
+	</script>
+  </head>
+
+  <body>
+
+  <body>
+    <!-- Static navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+			<button id="btnCollapse" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	        <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Sharad Shriram</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li class="active"><a href="#">Projects</a></li>
+            <li><a href="index.html#publications">Publications</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+	<div id="workwrap">
+	    <div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-3">
+					<h1>MY PROJECTS</h1>
+					<h4>A complete list of all my projects <br>from research to hobby - Everything's here!!</h4>
+				</div>
+			</div><!--/row -->
+	    </div> <!-- /container -->
+	</div><!--/workwrap -->
+	
+	<section id="works"></section>
+	<div class="container">
+		<div class="row">
+			<p> 
+				<br>
+				NOTE:<br>
+				Most of the projects are on Github (it's open sourced). If a project interests you, please do visit the project's webpage.<br> <br>
+				More updates on the way, thank you for your time :)<br><br><br>
+			</p>
+		</div>
+		<div class="row">
+			<ol>
+				<div class="col-lg-8">
+					<li>
+						<h4><a href="acm-dc.html">An IoT-Based Energy Management System for Data Centers</a></h4> 
+						<p>This is an IoT solution that allows administrators to monitor the energy consumption at Datacenters. The sensor nodes sense: Humidity, Temperature and the Voltage consumed in each rack. The data acquired gets processed and prediction of future needs is done with primitive perceptron learning algorithm<a href="acm-dc.html">[More..]</a></p>
+					</li>
+				</div>
+			    <div class="col-lg-4">
+					<img class="img-responsive img-thumbnail"  width="200" height="236" src="assets/img/portfolio/acm.png">
+				</div>
+
+				<div class="col-lg-8">
+					<li>
+						<h4><a href="fp.html">The Smart Bus Project : Redefining Commuting in Cities</a></h4> 
+						<p>This project was part of my undergraduate thesis. The project implements an end-to-end system that establishes communication between the bus and the commuter. A project done under the “Smart Cities” context, this project predicts ETA and also helps commuters track their ride. The project also has a admin console to monitor the fleet of buses.<a href="fp.html">[More..]</a></p>
+					</li>
+				</div>
+			    <div class="col-lg-4">
+					<img class="img-responsive img-thumbnail"  width="200" height="236" src="assets/img/portfolio/fp.png">
+				</div>
+
+				<div class="col-lg-8">
+					<li>
+						<h4><a href="ti.html">An Automated System to Mitigate Loss of Life at Unmanned Level Crossings</a></h4> 
+						<p>A prototype of an early warning system that signals about an incoming train at unmanned railway level crossings. This project was done as part of the Texas Instruments Innovation Challenge India Design Contest 2015, with kits sponsored by Texas Instruments, India<a href="ti.html">[More..]</a></p>
+					</li>
+				</div>
+			    <div class="col-lg-4">
+					<img class="img-responsive img-thumbnail"  width="200" height="236" src="assets/img/portfolio/ti.jpg">
+				</div>
+
+				<div class="col-lg-8">
+					<li>
+						<h4><a href="#">Super Mario for Web Browsers</a></h4> 
+						<p>A HTML/Javascript reproduction of the famous arcade game "Super Mario", built as part of the Free and Open Source Software course at Amrita Vishwa Vidyapeetham. Built using Grunt, HTML5, JS - this game is supported on the common web browsers<a href="mario.html">[More..]</a></p>
+					</li>
+				</div>
+			    <div class="col-lg-4">
+					<img class="img-responsive img-thumbnail"  width="200" height="236" src="assets/img/portfolio/mario.png">
+				</div>
+				<!--
+				<div class="col-lg-8">
+					<li>
+						<h4><a href="#">Tweetcloud</a></h4> 
+						<p>2 line description</p>
+					</li>
+				</div>
+			    <div class="col-lg-4">
+					<img class="img-responsive img-thumbnail"  width="200" height="236" src="assets/img/pr01.jpg">
+				</div>	
+
+				<div class="col-lg-8">
+					<li>
+						<h4><a href="#">Realtime Earthquake Tracker</a></h4> 
+						<p>2 line description</p>
+					</li>
+				</div>
+			    <div class="col-lg-4">
+					<img class="img-responsive img-thumbnail"  width="200" height="236" src="assets/img/pr01.jpg">
+				</div>		
+
+				<div class="col-lg-8">
+					<li>
+						<h4><a href="#">Resume Parser</a></h4> 
+						<p>2 line description</p>
+					</li>
+				</div>
+			    <div class="col-lg-4">
+					<img class="img-responsive img-thumbnail"  width="200" height="236" src="assets/img/pr01.jpg">
+				</div>		
+
+				<div class="col-lg-8">
+					<li>
+						<h4><a href="#">Engine Idler</a></h4> 
+						<p>2 line description</p>
+					</li>
+				</div>
+			    <div class="col-lg-4">
+					<img class="img-responsive img-thumbnail"  width="200" height="236" src="assets/img/pr01.jpg">
+				</div>		
+
+				<div class="col-lg-8">
+					<li>
+						<h4><a href="#">Pacman</a></h4> 
+						<p>2 line description</p>
+					</li>
+				</div>
+			    <div class="col-lg-4">
+					<img class="img-responsive img-thumbnail"  width="200" height="236" src="assets/img/pr01.jpg">
+				</div>
+
+				<div class="col-lg-8">
+					<li>
+						<h4><a href="#">Flask101 - getting started</a></h4> 
+						<p>2 line description</p>
+					</li>
+				</div>
+			    <div class="col-lg-4">
+					<img class="img-responsive img-thumbnail"  width="200" height="236" src="assets/img/pr01.jpg">
+				</div>
+
+				<div class="col-lg-8">
+					<li>
+						<h4><a href="#">Simple 2-column Latex Resume</a></h4> 
+						<p>2 line description</p>
+					</li>
+				</div>
+			    <div class="col-lg-4">
+					<img class="img-responsive img-thumbnail"  width="200" height="236" src="assets/img/pr01.jpg">
+				</div>
+
+				<div class="col-lg-8">
+					<li>
+						<h4><a href="#">Connecting CC3200 to the Internet</a></h4> 
+						<p>2 line description</p>
+					</li>
+				</div>
+			    <div class="col-lg-4">
+					<img class="img-responsive img-thumbnail"  width="200" height="236" src="assets/img/pr01.jpg">
+				</div>	
+				-->
+			</ol>
+		</div><!--/row -->
+	</div><!--/container -->
+	
+	<!--Social Media-->	
+	<section id="contact"></section>
+	<div id="social">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-4">
+					<a href="skype:sharad.sriram?userinfo"><i class="fa fa-skype"></i></a>
+				</div>
+				<div class="col-lg-2">
+					<a href="mailto:sharad.sriram@gmail.com"><i class="fa fa-envelope-o"></i></a>
+				</div>
+				<div class="col-lg-2">
+					<a href="https://twitter.com/sharad_sriram"><i class="fa fa-twitter"></i></a>
+				</div>
+				<div class="col-lg-2">
+					<a href="https://linkedin.com/in/sharad10694"><i class="fa fa-linkedin"></i></a>
+				</div>
+				<div class="col-lg-2">
+					<a href="https://github.com/ssharad"><i class="fa fa-github"></i></a>
+				</div>
+			</div><!--/row -->
+		</div><!--/container -->
+	</div><!--/social -->
+
+	<div id="footerwrap">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-4">
+					<p><b>DEVELOPER, RESEARCHER & FREELANCER</b></p>
+				</div>
+			
+				<div class="col-lg-4">
+					<p>Living in Coimbatore, India.</p>
+				</div>
+				<div class="col-lg-4">
+					<p>sharad.sriram@gmail.com</p>
+				</div>
+			</div>
+		</div>
+	</div><!--/footerwrap -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
