@@ -1,3 +1,3 @@
-# ssharad.github.io
-Redesigned personal website of Sharad Shriram
+# miteshgadgil.github.io
+Personal website of Mitesh Gadgil
 
