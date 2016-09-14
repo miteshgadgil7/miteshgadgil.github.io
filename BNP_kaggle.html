@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
 
-    <title>Sharad Shriram - Project_name</title>
+    <title>Mitesh Gadgil - Home</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -55,14 +55,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Sharad Shriram</a>
+          <a class="navbar-brand" href="index.html">Mitesh Gadgil</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="index.html#about">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="index.html#publications">Publications</a></li>
+            <li><a href="index.html#works">Projects</a></li>
+            <!-- <li><a href="index.html#publications">Publications</a></li> -->
             <li><a href="index.html#blog">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -75,9 +75,9 @@
 	    <div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-lg-offset-3">
-					<h1>THE SMART BUS PROJECT</h1>
-					<h4>Redefining Commuting in Cities</h4>
-					<h4>LEAD DESIGNER & DEVELOPER</h4>
+					<h1>BNP Paribas Kaggle Contest</h1>
+					<h4>CAPSTONE PROJECT</h4>
+					<h4>FOR A GRADUATE COURSE AT UCSD </h4>
 				</div>
 			</div><!--/row -->
 	    </div> <!-- /container -->
@@ -88,35 +88,23 @@
 		<div class="row  mt mb">
 			<div class="col-lg-10 col-lg-offset-2">
 				<h4>ABOUT THE PROJECT</h4>
-				<p>The need for a real-time public transport information system is growing steadily. People want to plan their city commutes and do not like waiting for long hours, nor take a long route to reach their destination. The proposed hardware solution in this paper computes the shortest path to reach the destination in real time and gives that information to the bus driver. Artificial Neural Networks (ANN) is used to give an accurate estimate of the arrival time (ETA) to the commuter by means of an application. ETA to the next stop is communicated to the commuter using the MQTT (Message Queuing Telemetry Transport) protocol, by the hardware mounted on the bus.The proposed solution also adds a fleet management console to the administrators, making them manage and monitor the fleet of buses in real time. The prototype thus developed makes sure the commuting in cities is pleasant, and hassle free.</p>
+				<p>I chose to participate in the <a href="https://www.kaggle.com/c/bnp-paribas-cardif-claims-management">BNP Paribas Cardif Claims Management Kaggle Contest</a> as the capstone project for the EDA & Statistical Inference graduate course at UCSD. This was my first time participating in a kaggle contest and it was a highly enjoyable and enriching experience. My focus throughout the project was to implement the whole data analysis workflow in R- starting with cleaning and upto validation of the model.
 				<br>
+				The challenge was a binary classification problem where we had to predict the probability of a particular claim being suitable for accelerated approval based on a number of anonymized features. The fact that there were a lot of features of different cardinality, scale and all of them anonymized made this challenge particularly difficult and gave me an opportunity to learn about working with data in a domain agnostic manner and purely on statistics. I pre-processed the data into a suitable form for applying ML models on it. I experimented with the generalized linear model (GLM), Random Forests and Xgboost packages in R. Xgboost which is the most popular ML algorithm in Kaggle contests in recent times, gave me the best results and fetched me a rank in the top half of the field of over 2000 participants.
 				<br>
-				<h4>IMPLEMENTATION</h4>
-				<p>The implementation was carried out using Quectel L10 GPS module and Beaglebone Black as the hardware kits to build the data acquisition and processing hardware, which is mounted on the bus. The communication between the bus- administrator and bus-commuter is facilitated using by the MQTT protocol. The Beaglebone Black was configured to run Debian Wheezy with all the codes to acquire, process and store the data was written in Python. The Beaglebone Black is additionally configured to store the acquired data as logs and also push it to the cloud (in this case - Google Spreadsheet). The results were studied over a period of two months. From the data acquired, a Multi-Layered Perceptron with Adaptive Learning Artificial Neural Network is implemented to predict the estimated time of arrival(ETA), which is communicated to the commuter and the administrator.</p>
-				<br>
-				<br>
-				<h4>KEY FEATURES</h4>
-				<ul>
-					<li>Dijkstra Algorithm is optimized to compute the shortest path in real runtime.</li>
-					<li>The ETA computation to the next stop is done using an Artificial Neural Network implemented on the Beaglebone Black.</li>
-					<li>The commuter can track the bus to the desired location and get the real-time ETA using the android app built with this project.</li>
-					<li>The transport manager can track and monitor the fleet in real-time using a web application with Google Maps.</li>
-				</ul>
+				<a class="btn btn-info" role="button" href="assets/Docs/MATH289C_Final_SSK_MAG.pdf">Writeup</a>
+				<a class="btn btn-info" role="button" href="https://github.com/miteshgadgil/miteshgadgil.github.io/tree/master/assets/Code/BNP_Kaggle">Code</a>
+				<\p>
 				<!--<br>
 				<br>
 				<h4>PUBLICATION</h4>
 				<p>This project was presented at the First International Workshop on Distributed Energy Networks at the Sixth ACM International Conference on Future Energy Systems (ACM e-Energy), Bangalore, India (2015). The paper can be accessed as PDF from the ACM Digital Library.
 				<a class="btn btn-info" role="button" href="http://dl.acm.org/citation.cfm?id=2768520">PDF</a>--></p>
 			</div>
-			<div class="col-lg-10 col-lg-offset-1 centered mt">
-				<center>
-				<img class="img-responsive" src="assets/img/portfolio/fp.png">
-				</center>
-				<caption>An overview of dataflow in the entire system</caption>
-			</div>	
+				
 		</div><!--/row -->
 	</div><!--/container -->
-	
+	<hr>
 	<!--Social Media-->	
 	<section id="contact"></section>
 	<div id="social">
