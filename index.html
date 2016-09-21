@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -241,4 +241,289 @@
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
     <script src="assets/js/bootstrap.min.js"></script>
   </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>Mitesh Gadgil - Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+	
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--JQuery for both Bootstrap as well as to integrate feeds from my blog-->
+    <script data-require="jquery@*" data-semver="2.1.3" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+    <!--Make the Navbar disappear upon click-->
+    <script type="text/javascript">
+    	 $(".a").click(function () {
+            if ($("#btnCollapse").css('display')!='none')
+            $("#btnCollapse").click();
+        });
+			/*$(document).on('click', '.nav-list li', function() {
+			   $(".nav-list li").removeClass("active");
+			   $(this).addClass("active");
+		   });*/
+	   /*added by Priyanka - Convergence Services*/
+		jQuery(document).ready(function(){	   
+
+		   jQuery(".navbar-nav > li a" ).each(function() {
+				jQuery(this).click(function() {
+					jQuery(".navbar-nav > li" ).removeClass("active");
+					jQuery(this).parent().addClass("active");
+					//var divid=jQuery(this).attr("href");
+					//var divida=jQuery(divid).find("a.active");
+					//ukv_icon_pos = jQuery(divida).position();
+					//jQuery("#uknowva_active").animate({top: ukv_icon_pos.top,}, 1000 );
+				});
+			});
+	   
+			jQuery('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				  var target = jQuery(this.hash);
+				  target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
+				  if (target.length) {
+					jQuery('html,body').animate({
+					  scrollTop: target.offset().top - 65 //offsets for fixed header
+					}, 1000);
+					return false;
+				  }
+				}
+			});
+		});
+		jQuery(window).load(function () {
+			 if(jQuery(location.href.split("#")[1])) {
+				  var target = jQuery('#'+location.href.split("#")[1]);
+				  if (target.length) {
+					jQuery('html,body').animate({
+					  scrollTop: target.offset().top -70 //offset height of header here too.
+					}, 1000);
+					return false;
+				  }
+			}
+		});
+	</script>
+  </head>
+
+  <body>
+    <!-- Static navbar -->
+    <div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Mitesh Gadgil</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Projects</a></li> 
+            <li><a href="assets/MITESH GADGIL Resume.pdf" target="_blank">Resume</a></li> 
+            <!--- <li><a href="#publications">Publications</a></li> -->
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+	<!--Home-->
+	<section id="home"></section>
+	<div id="headerwrap">
+	    <div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-3">
+					<h4>HELLO, MY NAME IS</h4>
+					<h1>MITESH GADGIL</h1>
+					<h4>DATA ENTHUSIAST WHO SEEKS PROBLEMS & DEVELOPS SOLUTIONS<br><br> The website is currently under CONSTRUCTION. Thanks for visiting! </h4>
+				</div>
+			</div><!--/row -->
+	    </div> <!-- /container -->
+	</div><!--/headerwrap -->
+
+	<!--About Me!-->
+	<section id="about"></section>
+	<div class="container">
+		<div class="row">
+			<h1>Bio</h1>
+			<div class="row">
+			        <div class="col-md-8">
+			            <p> I am a graduate student at University of California San Diego (UCSD) pursuing my Masters with a specialization in Intelligent Systems.<br><br> I currently hold a Bachelors Degree in Electrical Engineering from <a href="http://www.bits-pilani.ac.in/Goa/index.aspx" target="_blank">BITS Pilani University, India</a>.<br><br> My preferred languages for data analysis and visualization include Python, R, Matlab and Tableau ; check out my <a href="#works">portfolio</a> to view some interesting analysis that I have conducted using these programming tools.<br><br>In my spare time, I enjoy the challenge of a kaggle competition and catching up on the latest trends in data science through <a href="http://www.kdnuggets.com/" target="_blank">KDnuggets</a> and <a href="http://www.datatau.com/" target="_blank">DataTau</a>. I am an avid soccer & cricket fan and always up for a fun game :) <br><br> <a class="btn btn-info" href="assets/MITESH GADGIL Resume.pdf" role="button" target="_blank">Download my resume</a> (or) <a class="btn btn-primary" href="#contact" role="button">Get in touch</a>.</p>
+			        </div>
+			        <div class="col-md-4">
+			        	<br><br>
+			            <img src="assets/img/mitesh.jpg"" class="img-responsive img-circle">
+			        </div>
+			</div>
+		</div><!--/row -->
+	</div><!--/container -->
+	<hr>
+
+	<!--projects-->
+	<section id="works"></section>
+	<div class="container">
+		<div class="row centered mt mb">
+			<h1>My Portfolio</h1>
+			
+			<div class="col-lg-15 col-md-15 col-sm-15 gallery">
+				<a href="R-Titanic.html">
+				<figure>
+					<img src="assets/img/portfolio/titanic.jpg" class="img-responsive">
+					<figcaption>My Data Analysis & Modelling Workflow: Titanic Problem</figcaption>
+					</figure>
+				</a>
+			</div>
+			<div class="col-lg-15 col-md-15 col-sm-15 gallery">
+				<a href="Loan Prediction.html">
+				<figure>
+					<img src="assets/img/portfolio/Loan Prediction.jpg" class="img-responsive">
+					<figcaption>Microsoft Cortana Challenge: Loan Classification</figcaption>
+					</figure>
+				</a>
+			</div>
+			<div class="col-lg-15 col-md-15 col-sm-15 gallery">
+				<a href="BNP_kaggle.html">
+				<figure>
+					<img src="assets/img/portfolio/BNP Paribas.png" class="img-responsive">
+					<figcaption>1st Kaggle Challenge Ever!</figcaption>
+					</figure>
+				</a>
+			</div>
+			<div class="col-lg-15 col-md-15 col-sm-15 gallery"> 
+				<a href="Math289_projects.html">
+					<figure>
+					<img src="assets/img/portfolio/math 289 image.jpg" class="img-responsive">
+					<figcaption>EDA & Statistical Inference Course Projects</figcaption>
+					</figure>
+				</a>
+			</div> 
+			<div class="col-lg-15 col-md-15 col-sm-15 gallery">
+				<a href="Spark_projects.html">
+				<figure>
+					<img src="assets/img/portfolio/Spark.jpg" class="img-responsive">
+					<figcaption>Big Data Analytics Course Projects</figcaption>
+					</figure>
+				</a>
+			</div>
+			<!-- <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+				<br><br><br><br><br>
+				<a class="btn btn-default" href="projects.html" role="button">Click here for more</a>
+			</div> -->
+			
+		</div><!--/row -->
+	</div><!--/container -->
+	<hr>
+        
+	<!--Blog Feed--><!--style the list better!-->
+	<section id="blog"></section>
+	 <div class="container"> 
+		<div class="row centered mt mb">
+			<h1>Latest from my blog</h1><br><br><h4>This section is under construction..To be UPDATED soon</h4>
+			
+		</div><!--/row -->
+		<script type="text/javascript"> 
+			//	var feedURL = 'http://journalofthegeek.wordpress.com/feed', 
+				    outputEl = '#feed', // Output element
+				    countLimit = 3; // Amount of items to show
+
+				$.ajax({
+				    url: document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent(feedURL),
+				    dataType: 'json',
+				    success: function(data) {
+				      
+				      var $ul = $('<div class="row"/>').appendTo(outputEl),
+				          entries = data.responseData.feed.entries;
+				            
+				      for (var i = 0, length = countLimit; i < length; i++) {
+				        
+				        var title = entries[i].title,
+				            contentSnippet = entries[i].contentSnippet,
+				            link = entries[i].link,
+				            $li = $('<li />').appendTo($ul),
+				            
+				        $link = $('<a class="feed-title" target="_blank" href="' + link + '" title="' + title + '"></a>').appendTo($li);
+				        $link.append('<span>' + title + '</span>');
+				        $li.append('<div class="feed-content"><p>' + contentSnippet + '</p></div>');    
+				      }  
+				    } 
+				 });    
+		</script> 
+		<div class="container" id="feed"></div>
+	</div><!--/container --> 
+
+	<!--Social Media-->	
+	<section id="contact"></section>
+	<div id="social">
+		<div class="container">
+			<div class="row centered">
+				<!-- <div class="col-lg-4"> 
+					<a href="skype:sharad.sriram?userinfo"><i class="fa fa-skype"></i></a>
+				</div> -->
+				<div class="col-lg-2">
+					<a href="mailto:mitesh.gadgil@gmail.com"><i class="fa fa-envelope-o"></i></a>
+				</div>
+				<!-- <div class="col-lg-2"> 
+					<a href="https://twitter.com/sharad_sriram"><i class="fa fa-twitter"></i></a>
+				</div> -->
+				<div class="col-lg-2">
+					<a href="https://linkedin.com/in/miteshgadgil"><i class="fa fa-linkedin"></i></a>
+				</div>
+				<div class="col-lg-2">
+					<a href="https://github.com/miteshgadgil"><i class="fa fa-github"></i></a>
+				</div>
+			</div><!--/row -->
+		</div><!--/container -->
+	</div><!--/social -->
+
+	<div id="footerwrap">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-4">
+					<p><b>DATA ENTHUSIAST, DEVELOPER & PROBLEM SOLVER</b></p>
+				</div>
+			
+				<div class="col-lg-4">
+					<p>Living in San Diego, California.</p>
+				</div>
+				<div class="col-lg-4">
+					<p>mitesh.gadgil@gmail.com</p>
+				</div>
+			</div>
+		</div>
+	</div><!--/footerwrap -->
+	
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
 </html>
+
