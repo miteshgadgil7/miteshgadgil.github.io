@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
 
-    <title>Sharad Shriram - Project_name</title>
+    <title>Mitesh Gadgil - Home</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -55,14 +55,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Sharad Shriram</a>
+          <a class="navbar-brand" href="index.html">Mitesh Gadgil</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="index.html#about">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="index.html#publications">Publications</a></li>
+            <li><a href="index.html#works">Projects</a></li>
+            <li><a href="assets/MITESH GADGIL Resume.pdf">Resume</a></li>
+            <!-- <li><a href="index.html#publications">Publications</a></li> -->
             <li><a href="index.html#blog">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -75,9 +76,8 @@
 	    <div class="container">
 			<div class="row">
 				<!--<div class="col-lg-6 col-lg-offset-3">-->
-					<h1>An IoT-Based Energy Management System for Data Centers</h1>
-					<!--<h4></h4>-->
-					<h4>ROLE: LEAD DESIGNER & DEVELOPER</h4>
+					<h1>Big Data Analysis projects using the Python API for Spark(PySpark)</h1>
+					<h4>PROJECTS UNDERTAKEN AS PART OF A GRADUATE COURSE AT UCSD</h4>
 				<!--</div>-->
 			</div><!--/row -->
 	    </div> <!-- /container -->
@@ -87,26 +87,18 @@
 	<div class="container">
 		<div class="row  mt mb">
 			<div class="col-lg-10 col-lg-offset-2">
-				<h4>ABOUT THE PROJECT</h4>
-				<p>The high energy consumption in data centers is becoming a major concern because it leads to increased operating costs and also, pollution, as fuel is burnt to produce the required energy. While many techniques and methods have been proposed by various organizations and researchers to minimize the energy consumption, there has been considerably less work done in making a smart-energy management system that is capable of collecting the data available and make decisions based on the energy consumption patterns. In this work, a smart system is proposed that uses Internet of Things to gather data and a machine learning algorithm for decision making.</p>
+				<h4>INTRODUCTION</h4>
+				<p>I chose to do a graduate course offered by the Computer Science Department at UCSD: 'Big Data analytics using Spark'. My motivation for undertaking this course as an elective was that the course would give me a good foundation in implementing data analysis and algorithms using a distributed computing framework like Spark. The course has helped me gain hands on experience of writing Python scripts that deploy Spark on an Amazon cluster and perform analytics on data of the order of ~100 GB. The course included 4 projects, each of which introduced application of Spark in a new domain.<br>I earned an A grade in the course. In the sections below I have included a brief writeup about the problem being analyzed and a link to the code developed to implement the analysis.</p>
 				<br>
-				<br>
-				<h4>IMPLEMENTATION</h4>
-				<p>The implementation was carried out using Arduino and Beaglebone Black as the hardware kits to build the sensor nodes and data processing/ decision making unit. The communication is facilitated using XBee/CC2500 in SPI mode and is wireless. The Beaglebone Black was configured to run Debian Wheezy with all the codes to acquire, process and store the data was written in Python. The Beaglebone Black is additionally configured to serve the acquired data visualized as charts and logs to the administrator as web pages. The wireless communication is made secure with XXTEA algorithm implemented on both the transmitting sensor nodes and the receiver.The results were studied over a period of two months. From the data acquired, a primitive perceptron based learning rule was implemented to predict future energy consumption based on the data acquired from the sensor nodes.</p>
-				<br>
-				<br>
-				<h4>PUBLICATION</h4>
-				<p>This project was presented at the First International Workshop on Distributed Energy Networks at the Sixth ACM International Conference on Future Energy Systems (ACM e-Energy), Bangalore, India (2015). The paper can be accessed as PDF from the ACM Digital Library.
-				<a class="btn btn-info" role="button" href="http://dl.acm.org/citation.cfm?id=2768520">PDF</a></p>
+				<ol>
+				<li><a href="#problem1">Text Processing: Finding the top-5 most frequent n-grams in the text of a novel</a></li>	
+				<li><a href="#problem2">Twitter Feed Mining: Top-5 frequently used tokens in the tweets of different groups of users</a></li>
+				<li><a href="#problem3">Implementation of Clustering algorithm: K-means++ </a></li>
+				<li><a href="#problem4">Binary Classification using MLlib(Spark's scalable ML library)</a></li>
+				</ol>
 			</div>
-			<div class="col-lg-10 col-lg-offset-1 centered mt">
-				<center>
-				<img class="img-responsive" src="assets/img/portfolio/acm.png">
-				</center>
-				<caption>The sensor node on the server rack at Amrita University,Coimbatore</caption>
-			</div>	
-		</div><!--/row -->
-	</div><!--/container -->
+		</div>
+	 </div>
 	
 	<!--Social Media-->	
 	<section id="contact"></section>
