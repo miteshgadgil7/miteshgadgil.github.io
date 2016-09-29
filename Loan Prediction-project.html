@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>Mitesh Gadgil - Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--Make the Navbar disappear upon click-->
+    <script type="text/javascript">
+    	 $(".a").click(function () {
+            if ($("#btnCollapse").css('display')!='none')
+            $("#btnCollapse").click();
+        });
+    </script>
+
+    	<!--Select the active li element-->
+    <script type="text/javascript">
+	   $(document).on('click', '.nav-list li', function() {
+	       $(".nav-list li").removeClass("active");
+	       $(this).addClass("active");
+	   });
+	</script>
+  </head>
+
+  <body>
+
+  <body>
+    <!-- Static navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+			<button id="btnCollapse" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Mitesh Gadgil</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#works">Projects</a></li>
+            <li><a href="assets/MITESH GADGIL Resume.pdf">Resume</a></li>
+            <!-- <li><a href="index.html#publications">Publications</a></li> -->
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+	<div id="workwrap">
+	    <div class="container">
+			<div class="row">
+				<!--<div class="col-lg-6 col-lg-offset-3">-->
+					<h1>Microsoft Cortana Contest: Loan Granting Challenge</h1>
+					<h4>Can we predict whether a customer will default on the loan?</h4>
+				<!--</div>-->
+			</div><!--/row -->
+	    </div> <!-- /container -->
+	</div><!--/workwrap -->
+	
+	<section id="works"></section>
+	<div class="container">
+		<div class="row  mt mb">
+			<div class="col-lg-10 col-lg-offset-2">
+				<h4>INTRODUCTION</h4>
+				<p>This is a documentation of my data analysis workflow using python data stack on the loan granting challenge </p>
+				<br>
+				<ol>
+				<li><a href="assets/Loan-Prediction-project/Data_Import_Exploration.html">Data Import and Exploratory analysis</a></li>	
+				<li><a href="assets/Loan-Prediction-project/Data_Cleaning.html">Data Cleaning </a></li>
+				<li><a href="assets/Loan-Prediction-project/Feature Engineering.html">Feature Engineering </a></li>
+				<li><a href="assets/Loan-Prediction-project/Modelling_Classification.html">Modelling and Prediction </a></li>
+				<!-- <li><a href="#problem4">Binary Classification using MLlib(Spark's scalable ML library)</a></li> -->
+				</ol>
+			</div>
+		</div>
+	 </div>
+	
+	<!--Social Media-->	
+	<section id="contact"></section>
+	<div id="social">
+		<div class="container">
+			<div class="row centered">
+				<!-- <div class="col-lg-4">
+					<a href="skype:sharad.sriram?userinfo"><i class="fa fa-skype"></i></a>
+				</div> -->
+				<div class="col-lg-2">
+					<a href="mailto:mgadgil@ucsd.edu"><i class="fa fa-envelope-o"></i></a>
+				</div>
+				<!-- <div class="col-lg-2">
+					<a href="https://twitter.com/sharad_sriram"><i class="fa fa-twitter"></i></a>
+				</div> -->
+				<div class="col-lg-2">
+					<a href="https://linkedin.com/in/miteshgadgil"><i class="fa fa-linkedin"></i></a>
+				</div>
+				<div class="col-lg-2">
+					<a href="https://github.com/miteshgadgil"><i class="fa fa-github"></i></a>
+				</div>
+			</div><!--/row -->
+		</div><!--/container -->
+	</div><!--/social -->
+
+	<div id="footerwrap">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-4">
+					<p><b>DEVELOPER, RESEARCHER & FREELANCER</b></p>
+				</div>
+			
+				<div class="col-lg-4">
+					<p>Living in Coimbatore, India.</p>
+				</div>
+				<div class="col-lg-4">
+					<p>sharad.sriram@gmail.com</p>
+				</div>
+			</div>
+		</div>
+	</div><!--/footerwrap -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
